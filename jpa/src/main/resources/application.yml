@@ -1,0 +1,9 @@
+
+spring:
+  datasource:
+    username: root
+    password: admin
+    url: jdbc:mysql://127.0.0.1/demo?characterEncoding=utf-8&serverTimezone=UTC
+  jpa:
+    hibernate:
+      ddl-auto: update # 如果启动时表格不一致则更新

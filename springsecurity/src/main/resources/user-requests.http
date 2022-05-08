@@ -1,0 +1,114 @@
+### Form login
+POST http://localhost:8080/login
+Content-Type: application/x-www-form-urlencoded
+
+username=test02
+&password=test02
+
+### Http basic
+
+### get /
+GET http://localhost:8080/
+
+### get /hello/pre/user
+GET http://localhost:8080/hello/pre/user
+## userRole: Authorization: Basic test03:test03
+Authorization: Basic dGVzdDAzOnRlc3QwMw==
+
+## adminRole: Authorization: Basic test02:test02
+# Authorization: Basic dGVzdDAyOnRlc3QwMg==
+
+### get /hello/post/user
+GET http://localhost:8080/hello/post/user
+# userRole: Authorization: Basic test03:test03
+Authorization: Basic dGVzdDAzOnRlc3QwMw==
+
+### get /hello/admin
+GET http://localhost:8080/hello/admin
+## adminRole: Authorization: Basic test02:test02
+Authorization: Basic dGVzdDAyOnRlc3QwMg==
+
+### get /hello/any
+GET http://localhost:8080/hello/any
+## adminRole: Authorization: Basic test02:test02
+Authorization: Basic dGVzdDAyOnRlc3QwMg==
+
+### post /user/prefilter
+POST http://localhost:8080/user/prefilter
+# userRole: Authorization: Basic test03:test03
+Content-Type: application/json
+Authorization: Basic dGVzdDAzOnRlc3QwMw==
+
+[
+	{
+		"id": 1,
+		"userName": "test01",
+		"password": "test01",
+		"email": "test01@qq.com",
+		"age": 60,
+		"height": 180.5,
+		"address": "Shanghai",
+		"education": "XIAOXUE",
+		"income": 10000.0
+	}
+]
+
+### post /user/postfilter
+POST http://localhost:8080/user/postfilter
+# userRole: Authorization: Basic test03:test03
+Content-Type: application/json
+Authorization: Basic dGVzdDAzOnRlc3QwMw==
+
+[
+  {
+    "id": 1,
+    "userName": "test01",
+    "password": "test01",
+    "email": "test01@qq.com",
+    "age": 60,
+    "height": 180.5,
+    "address": "Shanghai",
+    "education": "XIAOXUE",
+    "income": 10000.0
+  }
+]
+
+### post /user/admin/prefilter
+POST http://localhost:8080/user/admin/prefilter
+Content-Type: application/json
+## adminRole: Authorization: Basic test02:test02
+Authorization: Basic dGVzdDAyOnRlc3QwMg==
+
+[
+  {
+    "id": 1,
+    "userName": "test01",
+    "password": "test01",
+    "email": "test01@qq.com",
+    "age": 60,
+    "height": 180.5,
+    "address": "Shanghai",
+    "education": "XIAOXUE",
+    "income": 10000.0
+  }
+]
+
+### post /user/prefilter1
+POST http://localhost:8080/user/prefilter1
+Content-Type: application/json
+## adminRole: Authorization: Basic test02:test02
+Authorization: Basic dGVzdDAyOnRlc3QwMg==
+
+[
+  {
+    "id": 1,
+    "userName": "test02",
+    "password": "test01",
+    "email": "test01@qq.com",
+    "age": 60,
+    "height": 180.5,
+    "address": "Shanghai",
+    "education": "XIAOXUE",
+    "income": 10000.0
+  }
+]

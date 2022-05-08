@@ -1,0 +1,63 @@
+### post /mq/send
+POST http://localhost:8085/mq/send
+Content-Type: application/json
+
+{
+  "orderId": "1",
+  "paidMoney": "100"
+}
+
+### post /mq/send/tag
+POST http://localhost:8085/mq/send/tag
+Content-Type: application/json
+
+{
+  "orderId": "2",
+  "paidMoney": "200"
+}
+
+### post /mq/convertAndSend
+POST http://localhost:8085/mq/convertAndSend
+Content-Type: application/json
+
+{
+  "orderId": "3",
+  "paidMoney": "300"
+}
+
+### post /mq/asyncSend
+POST http://localhost:8085/mq/asyncSend
+Content-Type: application/json
+
+{
+  "orderId": "4",
+  "paidMoney": "400"
+}
+
+### post /mq/asyncBatchSend
+POST http://localhost:8085/mq/asyncBatchSend
+Content-Type: application/json
+
+[
+  {
+    "orderId": "5",
+    "paidMoney": "500"
+  },
+  {
+    "orderId": "6",
+    "paidMoney": "600"
+  },
+  {
+    "orderId": "7",
+    "paidMoney": "700"
+  }
+]
+
+### post /mq/syncSend
+POST http://localhost:8085/mq/syncSend
+Content-Type: application/json
+
+{
+  "orderId": "7",
+  "paidMoney": "700"
+}
