@@ -21,6 +21,7 @@
 		<module>mongodb</module>
         <module>springsecurity</module>
         <module>rocketmq</module>
+        <module>es</module>
     </modules>
 
 	<properties>

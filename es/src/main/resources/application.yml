@@ -1,0 +1,13 @@
+#spring:
+#  elasticsearch:
+#    uris: 127.0.0.1:9200
+#    username: elastic
+#    password: m*4smtM+g6V0BIeDO3mX
+#
+
+elasticsearch:
+  host: 127.0.0.1
+  port: 9200
+#  fingerprint: bdcd347aaadb041c845d610c635dc49e8094f6b746bad7a91816a7ea70d15b49
+#  username: elastic
+#  password: m*4smtM+g6V0BIeDO3mX
