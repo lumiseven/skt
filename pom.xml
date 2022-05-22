@@ -22,7 +22,8 @@
         <module>springsecurity</module>
         <module>rocketmq</module>
         <module>es</module>
-    </modules>
+		<module>swagger</module>
+	</modules>
 
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
