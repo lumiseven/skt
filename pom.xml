@@ -23,6 +23,7 @@
         <module>rocketmq</module>
         <module>es</module>
 		<module>swagger</module>
+		<module>discovery</module>
 	</modules>
 
 	<properties>
