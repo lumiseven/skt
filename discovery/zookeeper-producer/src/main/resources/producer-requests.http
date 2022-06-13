@@ -1,0 +1,2 @@
+### get /hello/zk
+GET http://localhost:8085/hello/zk

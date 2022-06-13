@@ -1,0 +1,5 @@
+### get /feign/hello/zk
+GET http://localhost:8086/feign/hello/zk
+
+### get /ribbon/hello/zk
+GET http://localhost:8086/ribbon/hello/zk
