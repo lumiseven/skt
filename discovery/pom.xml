@@ -17,6 +17,8 @@
         <module>consul-consumer</module>
         <module>zookeeper-producer</module>
         <module>zookeeper-consumer</module>
+        <module>nacos-producer</module>
+        <module>nacos-consumer</module>
     </modules>
 
     <artifactId>discovery</artifactId>

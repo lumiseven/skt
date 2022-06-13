@@ -1,0 +1,5 @@
+### get /ribbon/hello/nacos
+GET http://localhost:8088/ribbon/hello/nacos
+
+### get /feign/hello/nacos
+GET http://localhost:8088/feign/hello/nacos
