@@ -2,7 +2,7 @@ server:
   port: 8000
 spring:
   application:
-    name: provider-server
+    name: eureka-producer-server
 eureka:
   client:
     service-url:

@@ -1,0 +1,5 @@
+### get /ribbon/hello/consul
+GET http://localhost:8081/ribbon/hello/consul
+
+### get /feign/hello/consul
+GET http://localhost:8081/feign/hello/consul

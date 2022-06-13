@@ -1,0 +1,2 @@
+### get /hello/consul
+GET http://localhost:8080/hello/consul

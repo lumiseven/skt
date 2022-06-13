@@ -11,8 +11,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>eureka</module>
-        <module>eureka-provider</module>
+        <module>eureka-producer</module>
         <module>eureka-consumer</module>
+        <module>consul-producer</module>
+        <module>consul-consumer</module>
     </modules>
 
     <artifactId>discovery</artifactId>
