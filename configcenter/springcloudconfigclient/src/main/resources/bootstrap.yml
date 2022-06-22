@@ -1,9 +1,0 @@
-server:
-  port: 8061
-spring:
-  application:
-    name: springcloudconfigclient
-  cloud:
-    config:
-      label: master
-      uri: http://localhost:8060

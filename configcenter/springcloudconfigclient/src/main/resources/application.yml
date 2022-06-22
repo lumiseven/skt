@@ -9,10 +9,7 @@ spring:
     config:
       label: master
       fail-fast: true
-#  cloud:
-#    config:
-#      label: master
-#      uri: http://localhost:8060
+
 management:
   endpoints:
     web:
