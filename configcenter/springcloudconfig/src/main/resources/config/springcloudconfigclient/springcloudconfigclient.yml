@@ -1,0 +1,6 @@
+key456: value789
+
+data:
+  username: ls
+
+from: configcenter/src/main/resources/config/springcloudconfigclient/springcloudconfigclient.yml

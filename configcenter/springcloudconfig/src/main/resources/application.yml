@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springcloudconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lumiseven/skt
+          default-label: master #配置文件分支
+          search-paths:
+            - configcenter/src/main/resources/config/{application}
+            - configcenter/src/main/resources/config/default
+server:
+  port: 8060
