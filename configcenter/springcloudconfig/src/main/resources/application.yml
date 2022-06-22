@@ -8,8 +8,8 @@ spring:
           uri: https://github.com/lumiseven/skt
           default-label: master #配置文件分支
           search-paths:
-            - configcenter/src/main/resources/config/{application}
-            - configcenter/src/main/resources/config/default
+            - configcenter/springcloudconfig/src/main/resources/config/{application}
+            - configcenter/springcloudconfig/src/main/resources/config/default
           clone-on-start: true
 server:
   port: 8060

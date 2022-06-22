@@ -1,0 +1,5 @@
+### get /config
+GET http://localhost:8061/config
+
+### get /env
+GET http://localhost:8061/actuator/env

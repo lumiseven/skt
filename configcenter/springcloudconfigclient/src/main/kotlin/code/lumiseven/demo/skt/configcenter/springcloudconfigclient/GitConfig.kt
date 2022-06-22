@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component
 data class GitConfig(
     @Value("\${key123")
     val key123: String,
-    @Value("\${key456}")
-    val key456: String,
-    @Value("\${data.username}")
-    val username: String,
-    @Value("\${from}")
-    val from: String,
+//    @Value("\${key456}")
+//    val key456: String,
+//    @Value("\${data.username}")
+//    val username: String,
+//    @Value("\${from}")
+//    val from: String,
 )

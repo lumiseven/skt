@@ -8,6 +8,7 @@ spring:
   cloud:
     config:
       label: master
+      fail-fast: true
 #  cloud:
 #    config:
 #      label: master
@@ -16,5 +17,5 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
+        include: refresh,health,info,env
 
