@@ -10,5 +10,6 @@ spring:
           search-paths:
             - configcenter/src/main/resources/config/{application}
             - configcenter/src/main/resources/config/default
+          clone-on-start: true
 server:
   port: 8060
