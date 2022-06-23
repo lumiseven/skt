@@ -12,4 +12,11 @@
 
     <artifactId>configcenter</artifactId>
 
+    <modules>
+        <module>springcloudconfig</module>
+        <module>springcloudconfigclient</module>
+        <module>apolloconfig</module>
+        <module>nacosconfig</module>
+    </modules>
+
 </project>

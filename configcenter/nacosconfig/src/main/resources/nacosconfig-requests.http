@@ -1,0 +1,5 @@
+### get /config
+GET http://localhost:8063/config
+
+### get /config2
+GET http://localhost:8063/config2

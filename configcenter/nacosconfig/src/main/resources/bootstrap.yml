@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8849
+        file-extension: yml
+        username: nacos
+        password: nacos
+  #        extension-configs:
+#          - data-id: ${spring.application.name}.yaml
+#            group: default
+#            refresh: true
+#          - data-id: ${spring.application.name}-${spring.profiles.active}.yaml
+#            group: default
+#            refresh: true
+  profiles:
+    active: dev

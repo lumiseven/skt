@@ -25,9 +25,7 @@
 		<module>swagger</module>
 		<module>discovery</module>
         <module>configcenter</module>
-		<module>configcenter/springcloudconfig</module>
-		<module>configcenter/springcloudconfigclient</module>
-	</modules>
+    </modules>
 
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
