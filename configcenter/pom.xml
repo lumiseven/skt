@@ -17,6 +17,7 @@
         <module>springcloudconfigclient</module>
         <module>apolloconfig</module>
         <module>nacosconfig</module>
+        <module>consulconfig</module>
     </modules>
 
 </project>

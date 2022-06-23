@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nacos-config-client
+    name: nacos-config-client # 需要填写
   cloud:
     nacos:
       config:

@@ -1,0 +1,7 @@
+data:
+  env: test
+  user:
+    username: ls-consul
+    password: 1234567
+from: config/application/data.yaml
+config_application_default: 1

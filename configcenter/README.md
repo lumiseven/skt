@@ -56,3 +56,6 @@ https://stackoverflow.com/a/70813003/5751473
      username: ls-nacos-data2
      password: 654321
    ```
+
+### consul
+[配置文件结构](consulconfig/config/README.md)

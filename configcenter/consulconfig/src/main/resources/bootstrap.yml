@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: consul-config-client # 需要填写 或者添加 spring.cloud.consul.config.name
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      config:
+        enabled: true
+        format: yaml
+        prefixes:
+          - config
+        data-key: data
+        # [BootstrapPropertySource {name='bootstrapProperties-config/consul-config-client,dev/'}, BootstrapPropertySource {name='bootstrapProperties-config/consul-config-client/'}, BootstrapPropertySource {name='bootstrapProperties-config/application,dev/'}, BootstrapPropertySource {name='bootstrapProperties-config/application/'}]
+  profiles:
+    active: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,7 @@
+data:
+  env: test3
+  user:
+    username: ls3-consul
+    password: 1234567
+from: config/consul-config-client,dev/data.yaml
+config_consul-config-client-dev: 3

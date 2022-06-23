@@ -1,0 +1,7 @@
+data:
+  env: test2
+  user:
+    username: ls2-consul
+    password: 1234567
+from: config/consul-config-client/data.yaml
+config_consul-config-client: 2
