@@ -9,10 +9,14 @@
 - [elasticsearch](es/README.md)
 - [swagger](swagger/README.md)
 - [discovery 注册中心](discovery/README.md)
-    - eureka
-    - consul
-    - zookeeper
-    - nacos
+  - eureka
+  - consul
+  - zookeeper
+  - nacos
 - [configcenter 配置中心](configcenter/README.md)
+  - springcloudconfig
+  - apollo
+  - nacos
+  - consul
 
 ## TODO
