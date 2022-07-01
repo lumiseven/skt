@@ -6,3 +6,42 @@ GET http://localhost:8071/provider/exception
 
 ### get /env
 GET http://localhost:8071/actuator/env
+
+
+### 路由 api 操作
+### 新增路由
+POST http://localhost:8071/route/add
+Content-Type: application/json
+
+{
+  "id": "consumer-server",
+  "uri": "lb://consul-consumer",
+  "order": "2",
+  "filters": [
+    {
+      "name": "StripPrefix",
+      "args": {
+        "_genkey_0": "1"
+      }
+    }
+  ],
+  "predicates": [
+    {
+      "name": "Path",
+      "args": {
+        "_genkey_0": "/consumer/**"
+      }
+    }
+  ],
+  "description": "新增路由"
+}
+
+
+### 查询所有redis中的路由
+GET http://localhost:8071/route/all
+
+### 删除指定id的redis中的路由
+DELETE http://localhost:8071/route/consumer-server
+
+### 动态路由查询
+GET http://localhost:8071/consumer/feign/hello/consul
