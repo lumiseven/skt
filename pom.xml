@@ -25,6 +25,7 @@
 		<module>swagger</module>
 		<module>discovery</module>
         <module>configcenter</module>
+        <module>gateway</module>
     </modules>
 
 	<properties>

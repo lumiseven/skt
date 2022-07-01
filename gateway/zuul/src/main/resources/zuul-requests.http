@@ -1,0 +1,6 @@
+### get /provider/
+GET http://localhost:8070/provider/hello/consul
+accessToken: 123
+
+### get /env
+GET http://localhost:8070/actuator/env

@@ -10,3 +10,13 @@ spring:
       discovery:
         service-name: ${spring.application.name}
         register: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

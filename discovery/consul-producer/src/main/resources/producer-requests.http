@@ -1,2 +1,6 @@
 ### get /hello/consul
 GET http://localhost:8080/hello/consul
+
+### httptrace 端口已经不再默认开放 https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2.0-M3-Release-Notes#actuator-http-trace-and-auditing-are-disabled-by-default
+### get /actuator/httptrace
+GET http://localhost:8080/actuator/httptrace

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: zuul
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      config:
+        enabled: true
+        format: yaml
+        prefixes:
+          - config
+        data-key: data
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

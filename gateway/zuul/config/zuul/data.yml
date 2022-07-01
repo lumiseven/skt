@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    provider-service-url:
+      path: /provider/**
+      service-id: consul-producer
+#    consumer-service-url:
+#      path: /consumer/**
+#      service-id: consul-consumer
