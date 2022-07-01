@@ -1,5 +1,9 @@
-### get /provider/
+### get /provider/hello/consul
 GET http://localhost:8070/provider/hello/consul
+accessToken: 123
+
+### get /provider/limit
+GET http://localhost:8070/provider/limit
 accessToken: 123
 
 ### get /env

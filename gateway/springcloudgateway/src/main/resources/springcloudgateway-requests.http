@@ -1,0 +1,8 @@
+### get /provider/hello/consul
+GET http://localhost:8071/provider/hello/consul
+
+### get /provider/exception
+GET http://localhost:8071/provider/exception
+
+### get /env
+GET http://localhost:8071/actuator/env

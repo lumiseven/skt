@@ -7,6 +7,9 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PR
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 
+/**
+ * 访问限流模拟
+ */
 @Component
 class RateLimiterFilter: ZuulFilter() {
     val rateLimiter = RateLimiter.create(2.0)
@@ -34,7 +37,8 @@ class RateLimiterFilter: ZuulFilter() {
         val ctx = RequestContext.getCurrentContext()
         val request = ctx.request
 
-        if("/provide/limit" == request.requestURI){
+        // 对 path 匹配的请求进行限流
+        if("/provider/limit" == request.requestURI){
             return true
         }
         return false

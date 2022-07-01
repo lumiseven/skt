@@ -11,6 +11,9 @@ import java.io.InputStream
 import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
 
+/**
+ * 默认服务融断器(fallback 降级操作) 当某个服务停止时(或者报错)会触发
+ */
 @Component
 class ApiFallbackProvider: FallbackProvider {
     override fun getRoute(): String {

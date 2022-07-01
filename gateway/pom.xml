@@ -14,6 +14,7 @@
 
     <modules>
         <module>zuul</module>
+        <module>springcloudgateway</module>
     </modules>
     
 </project>
