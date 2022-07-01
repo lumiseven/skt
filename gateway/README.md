@@ -31,3 +31,4 @@ gateway 中测试的 `限流` 使用 `redis-reactive` 将部分操作放入了 `
 [spring-cloud-gateway 文档](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
 [spring-cloud-gateway CircuitBreaker](https://cloud.spring.io/spring-cloud-gateway/reference/html/#spring-cloud-circuitbreaker-filter-factory)
 [spring-cloud-gateway RequestRateLimiter](https://cloud.spring.io/spring-cloud-gateway/reference/html/#the-requestratelimiter-gatewayfilter-factory)
+[配置参考](https://www.edjdhbb.com/2018/12/25/spring%20cloud%20gateway%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B1%E2%80%94%E2%80%94Route%20Predicate/)
