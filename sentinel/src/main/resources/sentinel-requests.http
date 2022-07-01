@@ -1,0 +1,11 @@
+### get /hello
+GET http://localhost:8081/hello
+
+### get /hello1
+GET http://localhost:8081/hello1
+
+### get /hello2
+GET http://localhost:8081/hello2
+
+### get /hello3
+GET http://localhost:8081/hello3

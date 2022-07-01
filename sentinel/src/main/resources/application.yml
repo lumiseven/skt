@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: sentinel-app
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858 # 连接 dashboard 监控
+      eager: true
+      datasource:
+        ds1:
+          file:
+            file: classpath:flowrule.json
+            data-type: json
+            rule-type: flow
+        ds2:
+          consul:
+            host: localhost
+            port: 8500
+            data-type: json
+            rule-key: sentinel/test1
+            rule-type: flow

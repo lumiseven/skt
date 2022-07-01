@@ -26,7 +26,8 @@
 		<module>discovery</module>
         <module>configcenter</module>
         <module>gateway</module>
-    </modules>
+		<module>sentinel</module>
+	</modules>
 
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
