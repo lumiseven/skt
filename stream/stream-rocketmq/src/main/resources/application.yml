@@ -1,0 +1,47 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: stream-rocketmq
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          name-server: localhost:9876
+          group: test-topic-producer-group
+        bindings:
+          input1:
+            consumer:
+              subscription: tagStr0
+              orderly: true
+#              tags: tagStr0
+          input2:
+            consumer:
+              subscription: tagStr1
+              orderly: false
+#              tags: tagStr1
+      bindings:
+        output1:
+          destination: test-topic
+          content-type: text/plain
+          group: test-topic-producer-group
+          producer:
+            partitionKeyExpression: headers['partitionKey']
+            partitionCount: 2
+        input1:
+          destination: test-topic
+          content-type: text/plain
+          group: test-consumer-group1
+          consumer:
+            partitioned: true
+            instance-index: 0  #当前实例id
+            instance-count: 2  #实例数
+        input2:
+          destination: test-topic
+          content-type: text/plain
+          group: test-consumer-group2
+          consumer:
+            partitioned: true
+            concurrency: 20
+            instance-index: 1  #当前实例id
+            instance-count: 2  #实例数

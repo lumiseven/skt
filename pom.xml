@@ -27,7 +27,8 @@
         <module>configcenter</module>
         <module>gateway</module>
 		<module>sentinel</module>
-	</modules>
+        <module>stream</module>
+    </modules>
 
 	<properties>
 		<revision>0.0.1-SNAPSHOT</revision>
