@@ -1,0 +1,17 @@
+### get /upload
+GET http://localhost:8090/upload
+
+### get /upload2
+GET http://localhost:8090/upload2
+
+### get /file-resource
+GET http://localhost:8090/file-resource
+
+### get /download
+GET http://localhost:8090/download
+
+### get /image/upload/{name}
+GET http://localhost:8090/image/upload/1.png
+
+### get /image/{name}
+GET http://localhost:8090/image/1.png

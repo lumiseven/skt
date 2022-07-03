@@ -21,5 +21,8 @@
 - [gateway 微服务网关](gateway/README.md)
   - zuul1
   - springcloudgateway
+- [sentinel](sentinel/README.md)
+- [stream](stream/README.md)
+  - rocketmq
 
 ## TODO

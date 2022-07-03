@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: alioss
+  cloud:
+    alicloud:
+      oss:
+        endpoint: http://oss-cn-hangzhou.aliyuncs.com
+      access-key: ${ALI_OSS_ACCESS_KEY}
+      secret-key: ${ALI_OSS_SECRET_KEY}

@@ -28,6 +28,7 @@
         <module>gateway</module>
 		<module>sentinel</module>
         <module>stream</module>
+        <module>alioss</module>
     </modules>
 
 	<properties>
