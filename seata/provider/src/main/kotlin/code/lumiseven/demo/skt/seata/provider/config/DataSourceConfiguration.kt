@@ -15,7 +15,7 @@ import javax.sql.DataSource
 @EnableConfigurationProperties(MybatisProperties::class)
 class DataSourceConfiguration {
     @Bean
-    @ConfigurationProperties(prefix = "spring.datasource")
+    @ConfigurationProperties(prefix = "spring.datasource.druid")
     fun dataSource(): DataSource {
         return DruidDataSource()
     }

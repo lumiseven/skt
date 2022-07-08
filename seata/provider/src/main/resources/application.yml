@@ -11,11 +11,38 @@ spring:
         service-name: ${spring.application.name}
         register: true
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/demo?characterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: admin
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/demo?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+      username: root
+      password: admin
+      max-active: 5
+      initial-size: 2
+      min-idle: 2
+      min-evictable-idle-time-millis: 300000 # 池中空闲连接大于minIdle且连接空闲时间大于该值，则关闭该连接，单位毫秒(5分钟，默认30分钟)
+      max-wait: 60000 # 获取连接时最大等待时间，单位毫秒(1分钟)
+      validation-query: select 1 # 检测连接是否有效时执行的sql命令
+      test-on-borrow: false # 借用连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      test-on-return: false # 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      test-while-idle: true # 连接空闲时检测，如果连接空闲时间大于timeBetweenEvictionRunsMillis指定的毫秒，执行validationQuery指定的SQL来检测连接是否有效
+      time-between-eviction-runs-millis: 60000 # 空闲连接检查、废弃连接清理、空闲连接池大小调整的操作时间间隔，单位是毫秒(1分钟)
+
+      ## 监控有关配置
+      filters: stat,wall # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      web-stat-filter:
+        enabled: true #是否启用StatFilter默认值false，用于采集 web-jdbc 关联监控的数据。
+        url-pattern: /* #需要监控的 url
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #排除一些静态资源，以提高效率
+      stat-view-servlet:
+        enabled: true #是否启用StatViewServlet（监控页面）默认值为false（考虑到安全问题默认并未启动，如需启用建议设置密码或白名单以保障安全）
+        url-pattern: /druid/* #内置的监控页面地址，例如 /druid/*，则内置监控页面的首页是 /druid/index.html
+        reset-enable: false #是否允许清空统计数据
+        login-username: admin
+        login-password: admin
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 seata:
   tx-service-group: seata-provider-group
