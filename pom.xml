@@ -30,6 +30,7 @@
         <module>stream</module>
         <module>alioss</module>
         <module>alischedulerx2</module>
+        <module>seata</module>
     </modules>
 
 	<properties>

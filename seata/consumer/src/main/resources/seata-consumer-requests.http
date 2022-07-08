@@ -1,0 +1,9 @@
+### post /seata/userAndOrder/add
+POST http://localhost:8089/seata/userAndOrder/add
+Content-Type: application/json
+
+{
+  "name": "ls1",
+  "age": 28,
+  "description": "order description"
+}
