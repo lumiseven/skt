@@ -1,0 +1,2 @@
+### get /dubbo/echo/{name}
+GET http://localhost:8102/dubbo/echo/ls

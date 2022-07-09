@@ -1,0 +1,17 @@
+server:
+  port: 8102
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  scan:
+    base-packages: code.lumiseven.demo.skt.stream.dubbo.consumer.controller
+  protocol:
+    name: dubbo
+    port: 20880
