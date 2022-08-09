@@ -1,0 +1,19 @@
+server:
+  port: 8105
+spring:
+  application:
+    name: monitor-prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    prometheus:
+      enabled: true
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    tags:
+      application: ${spring.application.name}

@@ -32,6 +32,7 @@
         <module>alischedulerx2</module>
         <module>seata</module>
         <module>dubbo</module>
+        <module>monitor</module>
     </modules>
 
 	<properties>
