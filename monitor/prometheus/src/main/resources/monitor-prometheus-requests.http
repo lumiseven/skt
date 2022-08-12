@@ -4,6 +4,5 @@ GET http://localhost:8105/prometheus
 ### get /hello/ls
 GET http://localhost:8105/hello/ls
 
-
 ### get /actuator/prometheus
 GET http://localhost:8105/actuator/prometheus

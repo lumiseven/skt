@@ -1,0 +1,2 @@
+### get /service2
+GET http://localhost:8108/service2
