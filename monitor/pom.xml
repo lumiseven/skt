@@ -12,6 +12,7 @@
     <modules>
         <module>prometheus</module>
         <module>zipkin</module>
+        <module>skywalking</module>
     </modules>
 
     <artifactId>monitor</artifactId>
