@@ -29,6 +29,7 @@
 		<module>sentinel</module>
         <module>stream</module>
         <module>alioss</module>
+        <module>alischedulerx2</module>
     </modules>
 
 	<properties>

@@ -1,0 +1,36 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: sinpletask1
+  schedulerx2:
+    endpoint: acm.aliyun.com # 使用公网服务
+    namespace: a5069810-e604-43ba-b6da-18796a64b693
+    group-id: test1
+    app-key: ZC9XwNKIbX6Z668pbH4a1Q==
+
+
+
+
+
+#  spring.schedulerx2.endpoint=acm.aliyun.com
+#  spring.schedulerx2.namespace=a5069810-e604-43ba-b6da-18796a64b693
+#  spring.schedulerx2.groupId=test1
+#  # 1.2.1及以上版本设置appKey
+#  spring.schedulerx2.appKey=ZC9XwNKIbX6Z668pbH4a1Q==
+
+#  spring.schedulerx2.endpoint=addr-hz-internal.edas.aliyun.com
+#  spring.schedulerx2.namespace=501e0e82-2684-43d6-ab30-da64763fa273
+#  spring.schedulerx2.groupId=test01
+#  # 1.2.1及以上版本设置appKey
+#  spring.schedulerx2.appKey=6kZI/hdY6ugMqU/b13SfwQ==
+
+#  spring.schedulerx2.endpoint=${endpoint}
+#  spring.schedulerx2.namespace=${namespace}
+#  spring.schedulerx2.groupId=${groupId}
+#  # 1.2.1及以上版本设置appKey
+#  spring.schedulerx2.appKey=${appKey}
+
+# 1.2.1以下版本设置AK/SK，开启其他特殊配置（如：配置文件定义任务同步、Spring任务自动同步）也需要额外配置以下参数。
+#spring.schedulerx2.aliyunAccessKey=${aliyunAccessKey}
+#spring.schedulerx2.aliyunSecretKey=${aliyunSecretKey}
