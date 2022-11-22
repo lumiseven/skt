@@ -24,5 +24,7 @@
 - [sentinel](sentinel/README.md)
 - [stream](stream/README.md)
   - rocketmq
+- [seata 分布式事务](seata/README.md)
+- [dubbo](dubbo/README.md)
 
 ## TODO
