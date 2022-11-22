@@ -24,6 +24,8 @@
 - [sentinel](sentinel/README.md)
 - [stream](stream/README.md)
   - rocketmq
+- [alibaba-oss](alioss/README.md)
+- [alibaba-schedulerx2](alischedulerx2/README.md)
 - [seata 分布式事务](seata/README.md)
 - [dubbo](dubbo/README.md)
 
