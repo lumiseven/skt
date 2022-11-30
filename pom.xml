@@ -33,6 +33,7 @@
         <module>seata</module>
         <module>dubbo</module>
         <module>monitor</module>
+        <module>hippo4j</module>
     </modules>
 
 	<properties>

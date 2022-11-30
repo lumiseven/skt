@@ -3,23 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>monitor</artifactId>
+        <artifactId>hippo4j</artifactId>
         <groupId>code.lumiseven.demo</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>skywalkingserver1</artifactId>
+    <artifactId>noconfig</artifactId>
+
+    <properties>
+        <hippo4j.springboot.version>1.4.3-upgrade</hippo4j.springboot.version>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <groupId>cn.hippo4j</groupId>
+            <artifactId>hippo4j-spring-boot-starter</artifactId>
+            <version>1.4.3-upgrade</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

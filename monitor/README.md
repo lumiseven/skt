@@ -10,6 +10,7 @@
 [docker-compose](prometheus/docker/docker-compose.yml)
 
 `grafana` 中可以使用 [micrometer](https://grafana.com/grafana/dashboards/4701-jvm-micrometer/) 模板
+default username: admin password: admin
 
 ### zipkin
 1. 服务安装(docker)
